@@ -1,0 +1,18 @@
+@import "./vars";
+
+.Layout__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+
+  .Layout__wrapper {
+    // relative  flex-1 px-[34px] bg-bg text-three
+    position: relative;
+    flex: 1;
+    padding: 0 34px;
+    background: $bg;
+    color: $three;
+  }
+}

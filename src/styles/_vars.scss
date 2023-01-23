@@ -1,0 +1,50 @@
+$bg: #f5f5f7;
+$header-white: #f5f5f7;
+$purple-main: #9933ef;
+$header-top: #313132;
+$three: #333333;
+$purple-dark: #7510ca;
+$success: #3fa796;
+$menu-icons: #9499a5;
+$text-secondary: #828282;
+$grey-five: #e0e0e0;
+$placeholder: #bdbddb;
+
+@mixin shadow {
+  background: #ffffff;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@mixin media-sm {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-2xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

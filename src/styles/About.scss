@@ -1,0 +1,41 @@
+.About {
+  &__content {
+    p {
+      margin-top: 1em;
+    }
+
+    &--hidden {
+      animation: fade 0.3s ease-in-out;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 6; /* number of lines to show */
+      // max-height: X * N; /* fallback */
+      height: fit-content;
+    }
+    &--open {
+      animation: fade-in 0.3s ease-in-out;
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

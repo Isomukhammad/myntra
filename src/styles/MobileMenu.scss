@@ -1,0 +1,51 @@
+@import "./vars";
+
+.Mobile-menu__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 14px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  color: $menu-icons;
+  background: #ffffff;
+  box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px 12px 0px 0px;
+
+  @include media-md {
+    display: none;
+  }
+
+  .Mobile-menu__category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+      color: $purple-main;
+
+      svg {
+        stroke: $purple-main;
+      }
+    }
+
+    svg {
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+      color: $purple-main;
+
+      svg {
+        stroke: $purple-main;
+      }
+    }
+  }
+}

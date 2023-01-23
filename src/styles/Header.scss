@@ -1,0 +1,320 @@
+@import "./vars";
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 34px;
+  color: white;
+
+  @include media-lg {
+    padding: 0;
+    gap: 0;
+  }
+
+  &__upper {
+    @include media-lg {
+      background: $header-top;
+      padding: 0 34px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      @include media-lg {
+        padding: 10px 0;
+        font-size: 14px;
+      }
+    }
+
+    &__categories {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+      font-weight: 500;
+
+      @include media-lg {
+        gap: 48px;
+      }
+    }
+
+    &__link {
+      cursor: pointer;
+      display: none;
+
+      @include media-lg {
+        display: flex;
+      }
+    }
+
+    &__logo {
+      width: 115px;
+
+      @include media-lg {
+        display: none;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-weight: 600;
+
+      @include media-lg {
+        gap: 48px;
+      }
+
+      .Header__phone-logo {
+        // cursor-pointer stroke-placeholder md:stroke-white md:hidden
+        // fill: red;
+        stroke: $placeholder;
+        cursor: pointer;
+
+        @include media-lg {
+          display: none;
+        }
+      }
+
+      .Header__phone-number {
+        display: none;
+
+        @include media-lg {
+          display: flex;
+        }
+      }
+
+      .Header__language {
+        &__button {
+          display: none;
+          flex-direction: row;
+          align-items: center;
+          padding: 6.5px 12px;
+          border: 1px solid rgba(224, 224, 224, 0.12);
+          cursor: pointer;
+          gap: 5px;
+          border-radius: 4px;
+
+          @include media-lg {
+            display: flex;
+          }
+        }
+        &__dropdown {
+          .szh-menu {
+            color: $three;
+            text-align: center;
+            font-family: sans-serif;
+            user-select: none;
+            background: white;
+            box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 6px;
+            min-width: 7em;
+            padding: 12px 8px;
+            left: -2em !important;
+            top: 0.7em !important;
+            z-index: 1;
+
+            &.szh-menu--state-open {
+              animation: szh-menu-show 0.15s ease-out;
+            }
+
+            &.szh-menu--state-close {
+              animation: szh-menu-hide 0.2s ease-out forwards;
+            }
+
+            &__item {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+              border-radius: 6px;
+              padding: 16px 32px;
+              cursor: pointer;
+              &__hover {
+                color: #fff;
+                background-color: $purple-main;
+                outline: none;
+              }
+            }
+
+            &__divider {
+              margin: 0.5rem 0.625rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__lower {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    @include media-lg {
+      padding: 24px 0 16px 0;
+      gap: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      padding-left: 34px;
+      padding-right: 32px;
+    }
+
+    @include media-2xl {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__column-1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      gap: 24px;
+    }
+
+    &__logo {
+      // hidden w-[143px] h-[32px] lg:flex
+      display: none;
+      width: 143px;
+      height: 32px;
+
+      @include media-lg {
+        display: flex;
+      }
+    }
+
+    &__menu {
+      // flex flex-row  gap-3 bg-purpleMain r-1 rounded-sm p-[12px] hover:bg-purpleDark transition duration-300 items-center font-semibold
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-weight: 600;
+      gap: 5px;
+      //   gap:
+      background-color: $purple-main;
+      border-radius: 12px;
+      padding: 12px;
+      transition: 0.3s all ease-in;
+
+      &:hover {
+        background-color: $purple-dark;
+      }
+
+      p {
+        // hidden lg:flex gap-2
+        display: none;
+        @include media-lg {
+          display: flex;
+          gap: 5px;
+        }
+
+        span {
+          display: none;
+          @include media-lg {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    &__search {
+      position: relative;
+      width: 100%;
+      max-width: 681px;
+
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 10px;
+        color: $three;
+
+        @include media-lg {
+          padding: 16px;
+          padding-right: 64px;
+        }
+
+        &:focus {
+          outline: #b8b8b8;
+        }
+      }
+
+      button {
+        // hidden lg:flex bg-purpleMain p-[11px] rounded-sm absolute top-[4px] right-[4px] hover:bg-purpleDark transition duration-300
+        display: none;
+        background-color: $purple-main;
+        padding: 11px;
+        border-radius: 12px;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        transition: 0.3s background-color;
+
+        &:hover {
+          background-color: $purple-dark;
+        }
+
+        @include media-lg {
+          display: flex;
+        }
+
+        svg {
+          fill: none;
+          stroke: white;
+        }
+      }
+    }
+
+    &__column-2 {
+      display: none;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 420px;
+
+      @include media-lg {
+        display: flex;
+      }
+    }
+
+    &__category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+
+      p {
+        color: $three;
+      }
+    }
+  }
+}
+
+@keyframes szh-menu-show {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes szh-menu-hide {
+  to {
+    opacity: 0;
+  }
+}

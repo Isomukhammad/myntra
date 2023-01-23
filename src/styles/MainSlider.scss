@@ -1,0 +1,88 @@
+.Main-slider {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+
+  &__swiper {
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        img {
+          object-fit: contain;
+          object-position: center;
+          border-radius: 12px;
+          max-height: 260px;
+        }
+      }
+    }
+  }
+
+  &__prevBtn,
+  &__nextBtn {
+    position: absolute;
+    width: fit-content;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 500px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  &__prevBtn {
+    left: 1em;
+
+    svg {
+      padding-right: 3px;
+    }
+  }
+
+  &__nextBtn {
+    right: 1em;
+
+    svg {
+      padding-left: 3px;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    position: absolute;
+    bottom: 1.5em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+
+    @include media-md {
+      bottom: -1.5em !important;
+    }
+
+    .swiper-pagination-bullet {
+      width: 40px;
+      border-radius: 500px;
+      height: 4px;
+      background: black;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: black;
+    }
+  }
+}
