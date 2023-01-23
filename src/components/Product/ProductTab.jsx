@@ -1,15 +1,14 @@
 import Image from "next/image";
 
-const ProductTab = ({ data }) => {
-    const { images, name, monthly, price } = data[0];
+const ProductTab = () => {
     return (
         <div className="Product-tab">
-            <Image src={images[0].img} alt="Product image" sizes="100vw" width="0" height="0" className="Product-tab__image" />
-            <h1>{name}</h1>
+            <Image src={'/images/product-0.webp'} alt="Product image" sizes="100vw" width="0" height="0" className="Product-tab__image" />
+            <h1></h1>
             <div>
-                <strong className="Product-tab__monthly">{monthly} сум <span className="Product-tab__monthly--duration">x18</span>
+                <strong className="Product-tab__monthly">5 390 325 сум <span className="Product-tab__monthly--duration">x18</span>
                 </strong>
-                <p className="Product-tab__price">{price} сум</p>
+                <p className="Product-tab__price">123 456 789 сум</p>
             </div>
             <div className="Product-tab__buttons">
                 <button className="Product-tab__buttons--cart">
