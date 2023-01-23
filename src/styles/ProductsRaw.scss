@@ -1,0 +1,25 @@
+@import "./vars";
+
+.Products-raw {
+  &__headline {
+    &__time {
+      p {
+        transform: skewX(20deg);
+      }
+      padding: 4px 30px;
+      background: linear-gradient(101.26deg, #f23737 -11.73%, #f26110 126.59%);
+      transform: skewX(-20deg);
+      border-radius: 6px;
+    }
+  }
+
+  &__items {
+    overflow: scroll;
+    margin: 0 -34px;
+    padding: 0 34px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
