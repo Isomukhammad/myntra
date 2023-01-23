@@ -2,6 +2,7 @@ import About from '@/components/Main/About';
 import Banner from '@/components/Main/Banner';
 import Categories from '@/components/Main/Categories';
 import DailySlider from '@/components/Main/DailySlider';
+import ProductsRaw from '@/components/Product/ProductsRaw';
 import Head from 'next/head'
 
 const Home = () => {
@@ -22,8 +23,14 @@ const Home = () => {
         <div className='pt-[20px] md:pt-[64px]'>
           <Categories />
         </div>
+        <div className='mt-12 lg:mt-20'>
+          <ProductsRaw title="Купите, пока это выгодно" time="19:54:41" />
+        </div>
         <div className='pt-[40px] lg:pt-[80px]'>
           <Banner type='ad' />
+        </div>
+        <div className='pt-12 lg:pt-20'>
+          <ProductsRaw title="Горячие новинки" />
         </div>
         <div className='mt-20'>
           <About />
