@@ -13,9 +13,8 @@
   }
 
   &__image {
-    padding: 0 12px;
+    // padding: 0 12px;
     border-radius: 12px;
-
     @include media-md {
       padding: 0 44px;
     }
