@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="Footer__container">
             <div className="Footer__wrapper 2xl:container 2xl:mx-auto">
                 <div className="Footer__header">
-                    <Image src='/images/footer-logo.png' alt="logo" width={0} height={0} sizes='100vw' className="Footer__logo" />
+                    <Image src='/images/footer-logo.png' alt="logo" width={0} height={0} sizes='100vw' placeholder="blurDataURL" className="Footer__logo" />
                     <button>
                         Карта магазинов
                     </button>

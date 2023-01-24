@@ -10,6 +10,7 @@ const Categories = () => {
                         alt="Акции и скидки"
                         width="120"
                         height="120"
+                        placeholder="blurDataURL"
                     />
                     <p>Акции и скидки</p>
                 </div>
@@ -22,6 +23,7 @@ const Categories = () => {
                         sizes="100vw"
                         width={120}
                         height={120}
+                        placeholder="blurDataURL"
                     />
                     <p>Ноутбуки и комьютеры</p>
                 </div>
@@ -34,6 +36,7 @@ const Categories = () => {
                         sizes="100vw"
                         width="0"
                         height="0"
+                        placeholder="blurDataURL"
                     />
                     <p>Акции и скидки</p>
                 </div>
@@ -46,6 +49,7 @@ const Categories = () => {
                         sizes="100vw"
                         width="0"
                         height="0"
+                        placeholder="blurDataURL"
                     />
                     <p>Акции и скидки</p>
                 </div>
@@ -58,6 +62,7 @@ const Categories = () => {
                         sizes="100vw"
                         width="0"
                         height="0"
+                        placeholder="blurDataURL"
                     />
                     <p>Акции и скидки</p>
                 </div>
@@ -70,6 +75,7 @@ const Categories = () => {
                         sizes="100vw"
                         width="0"
                         height="0"
+                        placeholder="blurDataURL"
                     />
                     <p>Акции и скидки</p>
                 </div>

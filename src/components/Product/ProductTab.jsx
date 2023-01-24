@@ -3,8 +3,10 @@ import Image from "next/image";
 const ProductTab = () => {
     return (
         <div className="Product-tab">
-            <Image src={'/images/product-0.webp'} alt="Product image" sizes="100vw" width="0" height="0" className="Product-tab__image" />
-            <h1></h1>
+            <div className="Product-tab__image">
+                <Image src={'/images/image 4.png'} alt="Product image" sizes="100vw" width={0} height={0} placeholder="blurDataURL" />
+            </div>
+            <h1>Планшет Apple iPad 10.2 Wi-Fi 64GB Space Grey (MK2K3)</h1>
             <div>
                 <strong className="Product-tab__monthly">5 390 325 сум <span className="Product-tab__monthly--duration">x18</span>
                 </strong>

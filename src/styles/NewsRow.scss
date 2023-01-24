@@ -1,0 +1,22 @@
+.NewsRow {
+  .swiper {
+    display: none;
+    padding: 0 34px;
+
+    @include media-md {
+      display: block;
+    }
+
+    .swiper-wrapper {
+      .swiper-slide {
+        width: fit-content;
+      }
+    }
+  }
+
+  &__mobile {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

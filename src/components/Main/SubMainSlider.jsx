@@ -28,13 +28,13 @@ const SubMainSlider = () => {
                 className="SubMain-slider__swiper"
             >
                 <SwiperSlide>
-                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" />
+                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
                 </SwiperSlide>
                 <SwiperSlide className="w-full">
-                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" />
+                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" />
+                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
                 </SwiperSlide>
             </Swiper>
 

@@ -11,6 +11,7 @@ const DailyProduct = () => {
                         sizes="100vw"
                         width={0}
                         height={0}
+                        placeholder="blurDataURL"
                         className="max-w-[160px] md:row-start-1 md:row-end-3"
                     />
 

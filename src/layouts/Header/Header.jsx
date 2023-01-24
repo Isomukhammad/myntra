@@ -15,7 +15,7 @@ const Header = () => {
                         <div className="Header__upper__link">Акции</div>
                     </div>
                     <Link href='/' className='Header__upper__logo'>
-                        <Image src={'/images/header-logo.png'} alt="Logo" sizes="100vw" width={0} height={0} />
+                        <Image src={'/images/header-logo.png'} alt="Logo" sizes="100vw" width={0} height={0} placeholder="blurDataURL" />
                     </Link>
                     <div className="Header__upper__info">
                         <svg
@@ -76,6 +76,7 @@ const Header = () => {
                         width={0}
                         height={0}
                         className="Header__lower__logo"
+                        placeholder="blurDataURL"
                     />
                     <button className="Header__lower__menu">
                         <svg
