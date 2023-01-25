@@ -78,7 +78,7 @@ const ProductList = () => {
                         >
                             <use xlinkHref="#bag"></use>
                         </svg>
-                        <p className="font-semibold text-white text-[16px] leading-6">В коризину</p>
+                        <p className="hidden lg:flex font-semibold text-white text-[16px] leading-6">В коризину</p>
                     </button>
                     <div>
                         <button className="ProductTab__buttons--like">
