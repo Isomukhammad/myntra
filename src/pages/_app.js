@@ -14,6 +14,7 @@ import Layout from "@/layouts/Layout/Layout";
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
+  console.log(router);
 
   useEffect(() => {
     const handleStart = () => NProgress.start()

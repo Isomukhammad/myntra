@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Categories = () => {
     return (
-        <div className="Categories flex flex-row overflow-x-scroll md:grid md:grid-cols-3 2xl:flex 2xl:justify-between">
+        <div className="Categories flex flex-row overflow-x-scroll md:grid md:grid-cols-3 xl:flex xl:justify-between">
             <div className="Categories__tab">
                 <div>
                     <Image
@@ -11,6 +11,7 @@ const Categories = () => {
                         width="120"
                         height="120"
                         placeholder="blurDataURL"
+                        className="h-[152px]"
                     />
                     <p>Акции и скидки</p>
                 </div>

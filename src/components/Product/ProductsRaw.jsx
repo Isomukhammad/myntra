@@ -49,7 +49,8 @@ const ProductsRaw = ({ title, time }) => {
                     <SwiperSlide><ProductTab /></SwiperSlide>
                 </Swiper>
             </div>
-            <div className="flex flex-nowrap overflow-scroll gap-4 px-[34px] lg:hidden">
+
+            <div className="Products-raw__mobile flex flex-nowrap overflow-scroll gap-4 px-[34px] lg:hidden">
                 <ProductTab />
                 <ProductTab />
                 <ProductTab />

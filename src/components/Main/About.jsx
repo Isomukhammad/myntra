@@ -27,9 +27,9 @@ const About = () => {
                 <p>Наша миссия – сделать для покупателей максимально удобным процесс выбора и покупки товаров. В то время как вы работаете, стремитесь построить карьеру, воспитать детей и воплотить свои мечты в реальность, помните, что мы всегда рядом с вами – мы в одном шаге, в одном клике. Где бы вы не находились: на работе, дома или в кафе, выбирайте качественную бытовую технику и электронику с комфортом и по выгодным ценам в интернет магазине Myntra.</p>
             </div>
             <button
-                className="text-purpleMain font-medium w-fit hover:text-purpleDark transition-all duration-150 hidden md:flex"
+                className="pt-3 text-purpleMain font-medium w-fit hover:text-purpleDark transition-all duration-150 hidden md:flex"
                 onClick={() => setIsHidden(!isHidden)}
-            >Читать далее...</button>
+            >{isHidden ? 'Читать далее...' : 'Скрыть'}</button>
         </div >
     );
 }

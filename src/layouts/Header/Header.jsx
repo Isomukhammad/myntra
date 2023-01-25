@@ -69,15 +69,17 @@ const Header = () => {
             </div>
             <div className="Header__lower w-full 2xl:container mx-auto">
                 <div className="Header__lower__column-1">
-                    <Image
-                        src="/images/header-logo.png"
-                        alt="logo"
-                        sizes="100vw"
-                        width={0}
-                        height={0}
-                        className="Header__lower__logo"
-                        placeholder="blurDataURL"
-                    />
+                    <Link href='/'>
+                        <Image
+                            src="/images/header-logo.png"
+                            alt="logo"
+                            sizes="100vw"
+                            width={0}
+                            height={0}
+                            className="Header__lower__logo"
+                            placeholder="blurDataURL"
+                        />
+                    </Link>
                     <button className="Header__lower__menu">
                         <svg
                             viewBox="0 0 24 24"

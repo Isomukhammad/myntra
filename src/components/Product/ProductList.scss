@@ -1,9 +1,5 @@
-.ProductTab {
+.ProductList {
   &__image {
-    border-radius: 12px;
-    // width: 235px;
-    overflow-x: hidden;
-
     &__swiper {
       position: relative;
       overflow: auto;
@@ -41,38 +37,6 @@
             }
           }
         }
-      }
-    }
-  }
-
-  &__buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-
-    @include media-md {
-      gap: 1em;
-    }
-
-    &--cart {
-      background-color: $purple-main;
-      padding: 8px 16px;
-      border-radius: 8px;
-      transition: 0.4s all;
-
-      &:hover {
-        background-color: $purple-dark;
-      }
-    }
-
-    &--like,
-    &--compare {
-      padding: 8px;
-      border-radius: 8px;
-      transition: 0.4s all;
-
-      &:hover {
-        background: $grey-five;
       }
     }
   }

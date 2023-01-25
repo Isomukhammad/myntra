@@ -1,0 +1,7 @@
+.Category {
+  &__brands {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

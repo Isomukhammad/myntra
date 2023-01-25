@@ -28,6 +28,7 @@ module.exports = {
                 greyFive: "#E0E0E0",
                 textSecondary: "#828282",
                 placeholder: "#BDBDBD",
+                error: "#E95050",
             },
             borderRadius: {
                 'sm': "12px",

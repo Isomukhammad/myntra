@@ -97,43 +97,11 @@
         }
       }
     }
+  }
 
-    &__btn {
-      &--disabled {
-        display: none;
-      }
-    }
-
-    &__prevBtn,
-    &__nextBtn {
-      transition: all 0.15s ease-in-out;
-      opacity: 0;
-      visibility: hidden;
-      position: absolute;
-      width: fit-content;
-      background-color: white;
-      filter: drop-shadow(2px 4px 12px rgba(0, 0, 0, 0.08));
-      padding: 12px;
-      border-radius: 500px;
-      z-index: 2;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-
-    &__prevBtn {
-      left: -1.6em;
-      svg {
-        padding-right: 3px;
-      }
-    }
-
-    &__nextBtn {
-      right: -1.6em;
-
-      svg {
-        padding-left: 3px;
-      }
+  &__mobile {
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 }

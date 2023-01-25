@@ -1,0 +1,57 @@
+@import "/src/styles/vars";
+
+.PaginateButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1;
+
+  &__buttons {
+    max-width: 392px;
+    li {
+      width: 100%;
+
+      @include media-md {
+        font-size: 16px;
+      }
+
+      a {
+        border-radius: 8px;
+        max-width: 40px;
+        height: 40px;
+        color: $three;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.05);
+        }
+
+        &.previous-page,
+        &.next-page {
+          width: 40px;
+          background: none;
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.05);
+          }
+
+          &:active {
+            background: rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+
+      &.active {
+        a {
+          background: $purple-main;
+          color: white;
+          width: 40px;
+        }
+      }
+    }
+  }
+}
