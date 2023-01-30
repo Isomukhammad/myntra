@@ -1,8 +1,16 @@
-@import "./vars";
+@import "/src/styles/vars";
 
 .Daily-slider {
   position: relative;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+
+  &__slider {
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
 
   &__pagination {
     display: flex;

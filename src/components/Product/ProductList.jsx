@@ -31,7 +31,7 @@ const ProductList = () => {
         <div className="ProductList bg-white p-4 rounded-sm w-full grid grid-cols-[45%_55%] gap-2 lg:flex lg:flex-row lg:gap-6">
             {
                 isMobile ? (
-                    <div className="ProductTab__image__swiper max-w-[200px]">
+                    <div className="ProductList__image__swiper max-w-[200px]">
                         <Swiper
                             pagination={true}
                             spaceBetween={30}
@@ -41,9 +41,9 @@ const ProductList = () => {
                             aria-disabled={true}
                         >
                             <SwiperSlide>
-                                <div>
-                                    <Image src={'/images/image 2.png'} alt="Product image" sizes="100vw" width={0} height={0} placeholder="blurDataURL" />
-                                </div>
+                                {/* <div> */}
+                                <Image src={'/images/image 2.png'} alt="Product image" sizes="100vw" width={0} height={0} placeholder="blurDataURL" />
+                                {/* </div> */}
                             </SwiperSlide>
                             <SwiperSlide><Image src={'/images/image 2.png'} alt="Product image" sizes="100vw" width={0} height={0} placeholder="blurDataURL" /></SwiperSlide>
                             <SwiperSlide><Image src={'/images/image 2.png'} alt="Product image" sizes="100vw" width={0} height={0} placeholder="blurDataURL" /></SwiperSlide>
@@ -58,17 +58,17 @@ const ProductList = () => {
                     </div>
                 )
             }
-            <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[60%_25%] lg:text-[20px] lg:justify-between lg:w-full">
+            <div className="flex flex-col gap-4 lg:gap-8 lg:grid lg:grid-cols-[60%_25%] lg:text-[20px] lg:justify-between lg:w-full">
                 <div className="flex flex-col justify-between h-full gap-3">
                     <h1>iPad Pro 12.9-inch M2/128GB Silver/Wi-Fi + Cellular/2022</h1>
                     <div>
-                        <strong className={`ProductTab__monthly text-sm sm:text-[16px] md:text-[20px]`}>300 000 сум <span className={`ProductTab__monthly--duration text-xs text-textSecondary md:text-sm`}>x18</span>
+                        <strong className={`ProductList__monthly text-sm sm:text-[16px] md:text-[20px]`}>300 000 сум <span className={`ProductList__monthly--duration text-xs text-textSecondary md:text-sm`}>x18</span>
                         </strong>
-                        <p className="ProductTab__price text-xs text-textSecondary line-through font-medium md:text-[14px]">123 456 789 сум</p>
+                        <p className="ProductList__price text-xs text-textSecondary line-through font-medium md:text-[14px]">123 456 789 сум</p>
                     </div>
                 </div>
-                <div className="ProductTab__buttons lg:flex lg:flex-col-reverse lg:justify-between lg:items-end">
-                    <button className="ProductTab__buttons--cart flex flex-row items-center gap-2">
+                <div className="ProductList__buttons flex items-center lg:flex-col-reverse lg:justify-between lg:items-end">
+                    <button className="ProductList__buttons--cart flex flex-row items-center gap-2 bg-purpleMain py-3 px-4 rounded-cart hover:bg-purpleDark transition duration-300">
                         <svg
                             viewBox="0 0 24 24"
                             width={24}
@@ -78,10 +78,10 @@ const ProductList = () => {
                         >
                             <use xlinkHref="#bag"></use>
                         </svg>
-                        <p className="hidden lg:flex font-semibold text-white text-[16px] leading-6">В коризину</p>
+                        <p className="hidden lg:flex font-semibold text-white text-[16px] leading-6 whitespace-nowrap"><span className="hidden xl:inline-block">Добавить</span> в коризину</p>
                     </button>
-                    <div>
-                        <button className="ProductTab__buttons--like">
+                    <div className="flex flex-row justify-end gap-3 w-full">
+                        <button className="ProductList__buttons--like hover:bg-gray-200 rounded-cart h-10 w-10 flex flex-row justify-center items-center">
                             <svg
                                 viewBox="0 0 24 24"
                                 width={24}
@@ -92,7 +92,7 @@ const ProductList = () => {
                                 <use xlinkHref="#favorite"></use>
                             </svg>
                         </button>
-                        <button className="ProductTab__buttons--compare">
+                        <button className="ProductList__buttons--compare hover:bg-gray-200 rounded-cart h-10 w-10 flex flex-row justify-center items-center">
                             <svg
                                 viewBox="0 0 24 24"
                                 width={24}

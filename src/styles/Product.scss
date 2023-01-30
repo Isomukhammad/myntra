@@ -1,0 +1,26 @@
+.Product {
+  &__сharacteristic {
+    &__category {
+      p {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+
+        span {
+          &::after {
+            content: "";
+            flex: 1;
+            border-bottom: 2px dotted #bdbdbd;
+          }
+        }
+      }
+
+      &__dot {
+        height: 19px;
+        flex: 1;
+        content: "";
+        border-bottom: 2px dotted #bdbdbd;
+      }
+    }
+  }
+}

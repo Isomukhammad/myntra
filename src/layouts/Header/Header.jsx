@@ -1,11 +1,60 @@
-import { Menu, MenuItem } from '@szhsin/react-menu';
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from 'react'
+import Login from "../Auth/Login";
+import Register from "../Auth/Register";
+import ResetPassword from "../Auth/Reset";
+import Verification from "../Auth/Verification";
+
 import CountryDrop from './CountryDrop';
+import LangDrop from './LangDrop';
+import Menu from './Menu';
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [loginOpen, setLoginOpen] = useState(false);
+    const [registerOpen, setRegisterOpen] = useState(false);
+    const [resetOpen, setResetOpen] = useState(false);
+    const [verifyOpen, setVerifyOpen] = useState(false);
+
+    const handleLoginOpen = () => {
+        setLoginOpen(!loginOpen);
+    }
+
+    const handleRegisterOpen = () => {
+        setLoginOpen(false);
+        setTimeout(() => { setRegisterOpen(true); }, 250);
+    }
+
+    const handleGoToLogin = () => {
+        setRegisterOpen(false);
+        setTimeout(() => { setLoginOpen(true); }, 250);
+    }
+
+    const hanldeRegisterClose = () => {
+        setRegisterOpen(false);
+    }
+
+    const handleResetOpen = () => {
+        setLoginOpen(!loginOpen);
+        setTimeout(() => { setResetOpen(!resetOpen); }, 250)
+    }
+
+    const handleResetClose = () => {
+        setResetOpen(false);
+    }
+
+    const handleVerifyOpen = () => {
+        setRegisterOpen(false);
+        setTimeout(() => { setVerifyOpen(true); }, 250)
+    }
+
+    const handleVerifyClose = () => {
+        setVerifyOpen(false);
+    }
+
     return (
-        <div className="Header">
+        <div className="Header relative">
             <div className="Header__upper">
                 <div className="Header__upper__wrapper 2xl:container 2xl:mx-auto">
                     <div className="Header__upper__categories">
@@ -30,64 +79,32 @@ const Header = () => {
                         </svg>
                         <div className="Header__phone-number">+998 90 555-66-88</div>
                         <div className='Header__language'>
-                            <Menu className="Header__language__dropdown" menuButton={
-                                <div className="Header__language__button">
-                                    <p>RU</p>
-                                    <svg
-                                        viewBox="0 0 16 17"
-                                        width={16}
-                                        height={17}
-                                    >
-                                        <use xlinkHref="#flag-russia"></use>
-                                    </svg>
-                                </div>
-                            }>
-                                <MenuItem>
-                                    <p>RU</p>
-                                    <svg
-                                        viewBox="0 0 16 17"
-                                        width={16}
-                                        height={17}
-                                    >
-                                        <use xlinkHref="#flag-russia"></use>
-                                    </svg>
-                                </MenuItem>
-                                <MenuItem>
-                                    <p>UZ</p>
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        width={16}
-                                        height={17}
-                                    >
-                                        <use xlinkHref="#flag-uzbekistan"></use>
-                                    </svg>
-                                </MenuItem>
-                            </Menu>
+                            <LangDrop />
                         </div>
                     </div>
                 </div>
             </div>
             <div className="Header__lower w-full 2xl:container mx-auto">
                 <div className="Header__lower__column-1">
-                    <Link href='/'>
+                    <Link href='/' className="hidden lg:inline-block">
                         <Image
                             src="/images/header-logo.png"
                             alt="logo"
                             sizes="100vw"
                             width={0}
                             height={0}
-                            className="Header__lower__logo"
+                            className="Header__lower__logo max-w-[144px]"
                             placeholder="blurDataURL"
                         />
                     </Link>
-                    <button className="Header__lower__menu">
+                    <button className="Header__lower__menu" onClick={() => setMenuOpen(!menuOpen)}>
                         <svg
                             viewBox="0 0 24 24"
                             width={24}
                             height={24}
                             stroke="white"
                         >
-                            <use xlinkHref="#menu"></use>
+                            <use xlinkHref={menuOpen ? '#x' : '#menu'}></use>
                         </svg>
                         <p>Каталог<span>товаров</span></p>
                     </button>
@@ -135,7 +152,7 @@ const Header = () => {
                         </svg>
                         <p>Избранное</p>
                     </div>
-                    <div className="Header__lower__category">
+                    <button className="Header__lower__category" onClick={handleLoginOpen}>
                         <svg
                             viewBox="0 0 24 24"
                             width={24}
@@ -145,9 +162,20 @@ const Header = () => {
                             <use xlinkHref="#user"></use>
                         </svg>
                         <p>Профиль</p>
-                    </div>
+                    </button>
                 </div>
             </div>
+            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Login open={loginOpen} setOpen={handleLoginOpen} setRegisterOpen={handleRegisterOpen} setResetOpen={handleResetOpen} />
+            <Register
+                open={registerOpen}
+                setOpen={handleRegisterOpen}
+                setClose={hanldeRegisterClose}
+                openLogin={handleGoToLogin}
+                openVerify={handleVerifyOpen}
+            />
+            <ResetPassword open={resetOpen} setOpen={handleResetClose} />
+            <Verification open={verifyOpen} setClose={handleVerifyClose} />
         </div >
     );
 }

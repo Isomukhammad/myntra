@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper";
-import DailyProduct from "../Product/DayProduct";
+import DailyProduct from "../Product/DailyProduct";
 
 const pagination = {
     el: ".Daily-slider__pagination",

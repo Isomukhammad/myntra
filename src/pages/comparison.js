@@ -1,12 +1,10 @@
 import EmptyPage from "@/components/EmptyPage";
 import PagePath from "@/components/Page/PagePath";
 import ProductsRaw from "@/components/Product/ProductsRaw";
-import Image from "next/image";
-import Link from "next/link";
 
-const Error = () => {
+const Comparison = () => {
     return (
-        <div className="pt-8 pb-10 flex flex-col">
+        <div className="mt-10 mb-20">
             <PagePath
                 paths={[
                     {
@@ -14,20 +12,20 @@ const Error = () => {
                         "name": "Главная"
                     }, {
                         "url": "",
-                        "name": `404 Error`
+                        "name": `Сравнение`
                     }
                 ]}
             />
             <EmptyPage
-                image="/images/404 Error.png"
-                title="Похоже страница удалена или перемещена по новому адресу"
-                text="Попробуйте проверить корректность ссылки или же просто вернитесь на главную"
+                image="/images/empty comparison.png"
+                title="В списке сравнения пока ничего нет"
+                text="Если у вас были товары для сравнения при прошлом визите, авторизуйтесь, чтобы увидеть их"
             />
             <div className="mt-10">
                 <ProductsRaw title="Самые просматриваемые" />
             </div>
         </div>
-    )
+    );
 }
 
-export default Error;
+export default Comparison;

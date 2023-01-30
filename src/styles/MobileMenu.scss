@@ -1,6 +1,6 @@
 @import "./vars";
 
-.Mobile-menu__container {
+.Mobile-menu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,7 +18,7 @@
   box-shadow: 4px 0px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px 12px 0px 0px;
 
-  @include media-md {
+  @include media-lg {
     display: none;
   }
 
@@ -49,5 +49,10 @@
         stroke: $purple-main;
       }
     }
+  }
+
+  &--border {
+    border-radius: 0;
+    box-shadow: none;
   }
 }

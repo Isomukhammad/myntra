@@ -2,9 +2,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const MobileMenu = () => {
+    const router = useRouter();
     const { pathname } = useRouter();
     return (
-        <div className="Mobile-menu__container">
+        <div className={`Mobile-menu ${pathname.includes('product') ? 'Mobile-menu--border' : ''}`}>
             <Link
                 href="/"
                 className={`Mobile-menu__category ${pathname === '/' ? 'active' : ''}`}>

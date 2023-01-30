@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { Menu } from "@headlessui/react";
 
-const SortMenu = ({ isRow, setIsRow }) => {
+const SortMenu = ({ isRow, setIsRow, setFilterOpen, setIsScroll }) => {
+    const [overflow, setOverflow] = useState(false);
+
     return (
         <div className="SortMenu flex flex-row font-semibold text-[15px] items-center gap-1 justify-between">
             <div className="flex flex-row gap-1 lg:hidden">
-                <button className="flex flex-row gap-2 bg-white py-3 px-2 rounded-sm items-center"><svg viewBox="0 0 24 24" width={18} height={18} className="fill-none stroke-three"><use xlinkHref="#filter" /></svg><p>Фильтр</p></button>
+                <button
+                    className="flex flex-row gap-2 bg-white py-3 px-2 rounded-sm items-center"
+                    onClick={() => { setFilterOpen(true); setIsScroll(false) }}>
+                    <svg viewBox="0 0 24 24" width={18} height={18} className="fill-none stroke-three"><use xlinkHref="#filter" /></svg>
+                    <p>Фильтр</p>
+                </button>
                 <button onClick={() => setIsRow(!isRow)} className="flex flex-row gap-1 text-[15px] items-center bg-white py-3 px-2 rounded-sm"><svg viewBox="0 0 24 24" width={18} height={18} className="fill-none stroke-three"><use xlinkHref={isRow ? '#menu-row' : '#dashboard'} /></svg><p>{isRow ? 'Список' : 'Плитка'}</p></button>
             </div>
             <Menu as="div" className="relative inline-block text-left lg:hidden">

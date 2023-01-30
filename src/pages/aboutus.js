@@ -16,7 +16,7 @@ const AboutUs = () => {
                     }
                 ]}
             />
-            <div className="AboutPage__description rounded-sm p-6 bg-white flex flex-col gap-10 pt-10 pb-20 mt-8">
+            <div className="AboutPage__description rounded-sm p-6 bg-white flex flex-col gap-10 pt-10 pb-20 mt-8 lg:px-10">
                 <h1 className="font-semibold text-[18px] lg:text-[24px]">О компании “Myntra”</h1>
                 <div className="AboutPage__content font-medium flex flex-col gap-10 lg:flex-row lg:flex-wrap lg:pl-14  lg:gap-6 2xl:pl-28 2xl:pr-60 lg:justify-between">
                     <div className="flex flex-col gap-6 lg:w-[37%]">

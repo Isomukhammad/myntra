@@ -1,3 +1,5 @@
+@import "/src/styles/_vars.scss";
+
 .ProductList {
   &__image {
     &__swiper {
@@ -7,10 +9,19 @@
       flex-direction: column;
 
       .swiper {
+        height: 60%;
+
+        @include media-sm {
+          height: 100%;
+        }
+
         .swiper-wrapper {
           .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             img {
-              max-height: 232px;
+              max-height: 90%;
               width: auto;
             }
           }

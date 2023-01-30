@@ -6,7 +6,7 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 
 const Layout = ({ children }) => {
     return (
-        <div className={`Layout__container font-mont sans-serif layout`}>
+        <div className="Layout__container font-mont sans-serif layout">
             {/* Sprites */}
             <Sprites />
 

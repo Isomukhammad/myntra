@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
+        "./node_modules/flowbite-react/**/*.js",
         "./pages/**/*.{js,ts,jsx,tsx}",
         "./components/**/*.{js,ts,jsx,tsx}",
-
-        // Or if using `src` directory:
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
@@ -18,6 +17,8 @@ module.exports = {
         extend: {
             colors: {
                 bg: '#f5f5f7',
+                primaryBg: '#F1F1FE',
+                primary: '#242424',
                 headerWhite: '#f5f5f7',
                 purpleMain: '#9933ef',
                 headerTop: '#313132',
@@ -25,6 +26,7 @@ module.exports = {
                 purpleDark: '#7510ca',
                 success: '#3fa796',
                 menuIcons: '#9499a5',
+                gray2: '#4F4F4F',
                 greyFive: "#E0E0E0",
                 textSecondary: "#828282",
                 placeholder: "#BDBDBD",
@@ -35,7 +37,9 @@ module.exports = {
                 'cart': "8px"
             },
             fontFamily: {
-                mont: ['Montserrat', 'sans-serif']
+                mont: ['Montserrat', 'sans-serif'],
+                roboto: ['Roboto', 'sans-serif'],
+                inter: ['Inter', 'sans-serif'],
             },
             text: {
                 'xs': '12px',
@@ -52,5 +56,7 @@ module.exports = {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require("flowbite/plugin")
+    ],
 }

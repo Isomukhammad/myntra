@@ -14,6 +14,21 @@ html,
 body {
   max-width: 100vw;
   min-height: 100vh;
+  overflow-y: overlay;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $purple-main;
+
+    &:hover {
+      background: $purple-dark;
+    }
+  }
 }
 
 a {
@@ -36,13 +51,20 @@ svg {
 @import "./FooterCategory.scss";
 @import "./Footer.scss";
 @import "./ProductTab.scss";
+@import "../components/Product/ProductList.scss";
 @import "./Banner.scss";
-@import "./DailySlider.scss";
+@import "../components/Product/DailySlider.scss";
 @import "./Categories.scss";
 @import "./MainSlider.scss";
 @import "./SubMainSlider.scss";
 @import "./About.scss";
+@import "./Product.scss";
 @import "./ProductsRaw.scss";
 @import "./NewsRow.scss";
 @import "./Category.scss";
 @import "../components/Category/PaginateButtons.scss";
+@import "../components/Inputs/InputRange.scss";
+@import "../components/Inputs/InputCheckbox.scss";
+@import "../components/Category/FilterOption.scss";
+@import "../components/Product/ProductSlider.scss";
+@import "../layouts/Auth/Verification.scss";

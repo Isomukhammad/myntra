@@ -18,7 +18,7 @@ const Footer = () => {
                     </button>
                 </div>
 
-                <div className="Footer__tabs">
+                <div className="Footer__tabs gap-3">
                     {
                         footer?.map((category) => (
                             <FooterCategory key={category.id} data={category} />

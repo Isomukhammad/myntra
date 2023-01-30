@@ -1,0 +1,18 @@
+.Input-checkbox {
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    height: 23px;
+    width: 23px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    content: "12";
+    transition: 0.3s;
+
+    &:checked {
+      background-color: #9933ef;
+    }
+  }
+}
