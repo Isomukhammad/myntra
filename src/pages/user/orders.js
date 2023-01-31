@@ -9,7 +9,7 @@ const Orders = () => {
                     <div className="relative flex flex-col gap-10 border-b border-b-bg pb-10 lg:flex-row lg:items-center lg:justify-between lg:pr-[80px] lg:gap-20">
                         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between lg:w-full">
                             <div className="flex flex-col gap-2 font-semibold">
-                                <h1 className="text-lg">Заказ № 165189 - 8198</h1>
+                                <h1 className="text-sm min-[360px]:text-lg">Заказ № 165189 - 8198</h1>
                                 <p className="py-2 px-4 bg-success w-fit rounded-full text-white">Заказ оплачен</p>
                             </div>
                             <div className="font-semibold text-[15px] text-textSecondary lg:text-[16px]">Доставка по адресу:<br />ботанический сад, ул. Абидова, 232 A</div>
