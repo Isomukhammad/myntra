@@ -1,8 +1,12 @@
 const { Disclosure, Transition } = require("@headlessui/react");
 
-const FilterOption = ({ title, children }) => {
+const FilterOption = ({ title, children, open }) => {
+    if (open === null) {
+        open = true;
+    }
+
     return (
-        <Disclosure defaultOpen={true}>
+        <Disclosure defaultOpen={open}>
             {
                 ({ open }) => (
                     <>
