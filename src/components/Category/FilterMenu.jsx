@@ -14,8 +14,8 @@ const FilterMenu = ({ open, setOpen, setIsScroll }) => {
                 </div>
                 <FilterOption title="Производитель">
                     <div className="relative">
-                    <svg></svg>
-                    <input type="text" placeholder="Найти производителя" className="border border-greyFive rounded-cart py-[14px] pl-10 focus:outline-gray-300 placeholder:font-medium placeholder:text-placeholder" />
+                        <svg viewBox="0 0 24 24" width={24} height={24} fill="none" stroke="#BDBDBD" className="absolute top-3 left-2"><use xlinkHref="#search" /></svg>
+                        <input type="text" placeholder="Найти производителя" className="block py-[13.5px] pl-9 w-full text-sm placeholder:text-placeholder placeholder:font-medium bg-transparent rounded-sm border-1 border-gray7 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain" />
                     </div>
                     <div className="max-h-[336px] overflow-y-scroll flex flex-col gap-7">
                         <InputCheckbox name="Samsung" quantity={54} />
@@ -37,11 +37,11 @@ const FilterMenu = ({ open, setOpen, setIsScroll }) => {
                         <input
                             type="text"
                             placeholder="от 5 000 000 000"
-                            className="border border-greyFive rounded-cart py-4 px-3 focus:outline-gray-300 placeholder:font-medium placeholder:text-placeholder"
+                            className="border border-greyFive rounded-cart py-4 px-3 text-sm placeholder:text-placeholder placeholder:font-medium placeholder:text-[15px] bg-transparent border-1 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain"
                         />
                         <input type="text"
                             placeholder="от 9 000 000 000"
-                            className="border border-greyFive rounded-cart py-4 px-3 focus:outline-gray-300 placeholder:font-medium placeholder:text-placeholder"
+                            className="border border-greyFive rounded-cart py-4 px-3 text-sm placeholder:text-placeholder placeholder:font-medium placeholder:text-[15px] bg-transparent border-1 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain"
                         />
                     </div>
                     <InputRange min={5000000000} max={9000000000} />
@@ -51,11 +51,11 @@ const FilterMenu = ({ open, setOpen, setIsScroll }) => {
                         <input
                             type="text"
                             placeholder="от 5 000 000 000"
-                            className="border border-greyFive rounded-cart py-4 px-3 focus:outline-gray-300 placeholder:font-medium placeholder:text-placeholder"
+                            className="border border-greyFive rounded-cart py-4 px-3 text-sm placeholder:text-placeholder placeholder:font-medium placeholder:text-[15px] bg-transparent border-1 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain"
                         />
                         <input type="text"
                             placeholder="от 9 000 000 000"
-                            className="border border-greyFive rounded-cart py-4 px-3 focus:outline-gray-300 placeholder:font-medium placeholder:text-placeholder"
+                            className="border border-greyFive rounded-cart py-4 px-3 text-sm placeholder:text-placeholder placeholder:font-medium placeholder:text-[15px] bg-transparent border-1 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain"
                         />
                     </div>
                     <InputRange min={5000000000} max={9000000000} />
@@ -65,11 +65,11 @@ const FilterMenu = ({ open, setOpen, setIsScroll }) => {
                         <input
                             type="text"
                             placeholder="от 5 000 000 000"
-                            className="border border-greyFive rounded-cart py-4 px-3 focus:outline-gray-300 placeholder:font-medium placeholder:text-placeholder"
+                            className="border border-greyFive rounded-cart py-4 px-3 text-sm placeholder:text-placeholder placeholder:font-medium placeholder:text-[15px] bg-transparent border-1 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain"
                         />
                         <input type="text"
                             placeholder="от 9 000 000 000"
-                            className="border border-greyFive rounded-cart py-4 px-3 focus:outline-gray-300 placeholder:font-medium placeholder:text-placeholder"
+                            className="border border-greyFive rounded-cart py-4 px-3 text-sm placeholder:text-placeholder placeholder:font-medium placeholder:text-[15px] bg-transparent border-1 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain"
                         />
                     </div>
                     <InputRange min={5000000000} max={9000000000} />
@@ -79,11 +79,11 @@ const FilterMenu = ({ open, setOpen, setIsScroll }) => {
                         <input
                             type="text"
                             placeholder="от 5 000 000 000"
-                            className="border border-greyFive rounded-cart py-4 px-3 focus:outline-gray-300 placeholder:font-medium placeholder:text-placeholder"
+                            className="border border-greyFive rounded-cart py-4 px-3 text-sm placeholder:text-placeholder placeholder:font-medium placeholder:text-[15px] bg-transparent border-1 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain"
                         />
                         <input type="text"
                             placeholder="от 9 000 000 000"
-                            className="border border-greyFive rounded-cart py-4 px-3 focus:outline-gray-300 placeholder:font-medium placeholder:text-placeholder"
+                            className="border border-greyFive rounded-cart py-4 px-3 text-sm placeholder:text-placeholder placeholder:font-medium placeholder:text-[15px] bg-transparent border-1 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain"
                         />
                     </div>
                     <InputRange min={5000000000} max={9000000000} />
