@@ -27,6 +27,8 @@ module.exports = {
                 success: '#3fa796',
                 menuIcons: '#9499a5',
                 gray2: '#4F4F4F',
+                gray6: '#ECEDEE',
+                gray7: '#F2F2F2',
                 greyFive: "#E0E0E0",
                 textSecondary: "#828282",
                 placeholder: "#BDBDBD",
