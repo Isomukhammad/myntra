@@ -41,9 +41,9 @@ const Sprites = () => (
             <path d="M9 11C9 11.7956 9.31607 12.5587 9.87868 13.1213C10.4413 13.6839 11.2044 14 12 14C12.7956 14 13.5587 13.6839 14.1213 13.1213C14.6839 12.5587 15 11.7957 15 11" strokeWidth="2" strokeLinecap="round" />
         </symbol>
         <symbol id="info_duotone_line">
-            <circle cx="12" cy="12" r="9" fill="#2A4157" fillOpacity="0.24" stroke="#222222" strokeWidth="1.2" />
-            <path d="M12 8.1C12.3314 8.1 12.6 7.83137 12.6 7.5C12.6 7.16863 12.3314 6.9 12 6.9C11.6686 6.9 11.4 7.16863 11.4 7.5C11.4 7.83137 11.6686 8.1 12 8.1Z" fill="#222222" strokeWidth="0.2" />
-            <path d="M12 17V10" strokeWidth="1.2" />
+            <circle cx="12" cy="12" r="9" fill="#9933EF" />
+            <path d="M12 8.25C12.4142 8.25 12.75 7.91421 12.75 7.5C12.75 7.08579 12.4142 6.75 12 6.75C11.5858 6.75 11.25 7.08579 11.25 7.5C11.25 7.91421 11.5858 8.25 12 8.25Z" fill="white" stroke="white" stroke-width="0.5" />
+            <path d="M12 17V10" stroke="white" stroke-width="1.5" />
         </symbol>
         <symbol id="trash">
             <path d="M10 15L10 12" strokeWidth="2" strokeLinecap="round" />
@@ -169,6 +169,13 @@ const Sprites = () => (
         <symbol id="compare">
             <path d="M2.71069 8L2.00359 7.29289L1.29648 8L2.00359 8.70711L2.71069 8ZM12.7107 9C13.263 9 13.7107 8.55228 13.7107 8C13.7107 7.44771 13.263 7 12.7107 7L12.7107 9ZM6.00359 3.29289L2.00359 7.29289L3.4178 8.70711L7.4178 4.70711L6.00359 3.29289ZM2.00359 8.70711L6.00359 12.7071L7.4178 11.2929L3.4178 7.29289L2.00359 8.70711ZM2.71069 9L12.7107 9L12.7107 7L2.71069 7L2.71069 9Z" />
             <path d="M22.7107 16L23.4178 15.2929L24.1249 16L23.4178 16.7071L22.7107 16ZM3.71069 17C3.15841 17 2.71069 16.5523 2.71069 16C2.71069 15.4477 3.15841 15 3.71069 15L3.71069 17ZM19.4178 11.2929L23.4178 15.2929L22.0036 16.7071L18.0036 12.7071L19.4178 11.2929ZM23.4178 16.7071L19.4178 20.7071L18.0036 19.2929L22.0036 15.2929L23.4178 16.7071ZM22.7107 17L3.71069 17L3.71069 15L22.7107 15L22.7107 17Z" />
+        </symbol>
+        <symbol id="minus">
+            <path d="M2.91675 7H11.0834" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </symbol>
+        <symbol id="plus">
+            <path d="M7 2.91669V11.0834" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M2.91675 7H11.0834" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </symbol>
     </svg>
 )
