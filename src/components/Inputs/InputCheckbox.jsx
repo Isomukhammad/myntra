@@ -13,21 +13,15 @@ const InputCheckbox = ({ name, handleChange, quantity }) => {
                     // handleChange(event);
                     setChecked(!checked);
                 }}
+                className="border-none ring-purpleMain focus:ring-0 focus:ring-offset-0"
             />
-            <label htmlFor={name} className="flex flex-row items-center text-sm gap-1">{name} <span className='text-textSecondary'>({quantity})</span></label>
-            {checked ? (
-                <div className='absolute h-6 w-6 pointer-events-none'>
-                    <svg
-                        viewBox='0 0 24 24'
-                        width={24}
-                        height={24}
-                        stroke="white"
-                        fill="none"
-                    >
-                        <use xlinkHref='#done_round'></use>
-                    </svg>
-                </div>
-            ) : null}
+            <label htmlFor={name} className="flex flex-row items-center text-sm gap-1">{name}
+                {
+                    quantity ? (
+                        <span className='text-textSecondary'>({quantity})</span>
+                    ) : (null)
+                }
+            </label>
         </div>
     )
 }
