@@ -8,11 +8,6 @@ const About = () => {
             <h1 className="text-purpleMain font-semibold leading-6">Myntra - Интернет магазин цифровой и бытовой техники и электроники</h1>
             <div
                 className={`About__content text-[15px] flex flex-col gap-4 ${isHidden ? 'About__content--hidden' : 'About__content--open'}`}
-                onClick={() => {
-                    if (window.innerWidth < '768') {
-                        setIsHidden(!isHidden)
-                    }
-                }}
             >
                 <p>Myntra – интернет магазин бытовой техники и электроники, с доставкой по городу Ташкент и всей Республике Узбекистан. У нас вы сможете купить товары с оптимальным соотношением цены и качества, ознакомиться с новинками, а также сравнить характеристики.</p>
                 <p>В каждом разделе мы расположили товары таким образом, чтобы вам было проще ознакомиться с каждым из них. Если вы хотите ускорить процесс выбора товаров, то вы можете воспользоваться удобной функцией поиска по сайту.</p>
@@ -27,9 +22,9 @@ const About = () => {
                 <p>Наша миссия – сделать для покупателей максимально удобным процесс выбора и покупки товаров. В то время как вы работаете, стремитесь построить карьеру, воспитать детей и воплотить свои мечты в реальность, помните, что мы всегда рядом с вами – мы в одном шаге, в одном клике. Где бы вы не находились: на работе, дома или в кафе, выбирайте качественную бытовую технику и электронику с комфортом и по выгодным ценам в интернет магазине Myntra.</p>
             </div>
             <button
-                className="pt-3 text-purpleMain font-medium w-fit hover:text-purpleDark transition-all duration-150 hidden md:flex"
+                className="pt-3 text-purpleMain font-medium w-fit hover:text-purpleDark transition-all duration-150"
                 onClick={() => setIsHidden(!isHidden)}
-            >{isHidden ? 'Читать далее...' : 'Скрыть'}</button>
+            >{isHidden ? 'Читать далее...' : '...Скрыть'}</button>
         </div >
     );
 }
