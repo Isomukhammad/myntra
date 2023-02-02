@@ -11,7 +11,7 @@ const ProductsRaw = ({ title, time }) => {
         <div className="Products-raw flex flex-col gap-8 mx-[-34px]">
             <div className="flex flex-row justify-between items-center px-[34px]">
                 <div className="Products-raw__headline flex flex-row gap-4 items-center">
-                    <h1 className="text-[20px] font-bold">{title}</h1>
+                    <h1 className="text-[20px] font-bold lg:text-[28px]">{title}</h1>
                     {time ? <div className="Products-raw__headline__time">
                         <p className="text-white font-semibold">{time}</p>
                     </div> : null}
@@ -28,6 +28,7 @@ const ProductsRaw = ({ title, time }) => {
                     </svg>
                 </div>
             </div>
+
             <div className="Products-raw__slider relative hidden lg:flex 2xl:px-[34px]">
                 <Swiper
                     spaceBetween={16}

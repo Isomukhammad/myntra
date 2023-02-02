@@ -18,7 +18,8 @@ const Home = () => {
       </Head> */}
       <HeadInfo title="Myntra" />
 
-      <main className="Home__container pt-[24px] pb-[80px]">
+      <main className="Home pt-[24px] pb-[80px]">
+        <div className='stiky top-0 Home__sticky'>Hello</div>
         <div className='flex flex-col gap-[20px] lg:grid lg:grid-cols-[65%_35%] lg:gap-[16px] bg-bg'>
           <Banner />
           <DailySlider />

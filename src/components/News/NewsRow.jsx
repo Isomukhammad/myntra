@@ -9,7 +9,7 @@ const NewsRow = () => {
     return (
         <div className="NewsRow flex flex-col gap-8 md:gap-10">
             <h1 className="text-[20px] font-bold">Новостной блог</h1>
-            <div className="mx-[-34px]">
+            <div className="mx-[-34px] lg:mx-0">
                 <Swiper
                     spaceBetween={16}
                     slidesPerView={'auto'}

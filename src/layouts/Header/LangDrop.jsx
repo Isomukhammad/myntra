@@ -7,7 +7,7 @@ const LangDrop = () => {
             <Menu as="div" className="relative inline-block text-left">
                 <div>
                     <Menu.Button className="w-full justify-center rounded-md bg-transparent bg-opacity-20 px-4 py-2 text-sm font-medium text-white flex flex-row items-center gap-1 border border-[#E0E0E01F]">
-                        <p className='font-semibold text-sm'>RU</p>
+                        <span className='font-semibold text-sm'>RU</span>
                         <svg
                             viewBox="0 0 16 17"
                             width={16}

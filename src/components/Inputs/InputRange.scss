@@ -1,4 +1,7 @@
 .Input-range {
+  input[type="range"] {
+    background-color: red;
+  }
   &__thumb {
     -webkit-appearance: none;
     -webkit-tap-highlight-color: transparent;

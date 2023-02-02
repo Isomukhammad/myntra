@@ -10,7 +10,7 @@ import { Autoplay, Pagination } from "swiper";
 const ProductTab = ({ type }) => {
     const [isHover, setIsHover] = useState(false);
     return (
-        <div className={`ProductTab rounded-sm bg-white px-4 md:p-6 pt-6 pb-4 md:pb-6 cursor-pointer text-sm gap-4 active:cursor-grabbing ${!type ? 'flex flex-col' : 'grid grid-cols-[38%_62%] items-center'}`}>
+        <div className={`min-w-[272px] ProductTab rounded-sm bg-white px-4 md:p-6 pt-6 pb-4 md:pb-6 cursor-pointer text-sm gap-4 active:cursor-grabbing ${!type ? 'flex flex-col' : 'grid grid-cols-[38%_62%] items-center'}`}>
             <div className="ProductTab__image md:p-6">
                 <Image src={`/images/image ${!isHover ? '2' : '4'}.png`} alt="Product image" sizes="100vw" width={0} height={0} placeholder="blurDataURL" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} />
             </div>

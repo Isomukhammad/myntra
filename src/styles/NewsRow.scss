@@ -7,6 +7,10 @@
       display: block;
     }
 
+    @include media-lg {
+      padding: 0;
+    }
+
     .swiper-wrapper {
       .swiper-slide {
         width: fit-content;

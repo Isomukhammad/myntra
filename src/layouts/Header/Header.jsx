@@ -1,11 +1,11 @@
+import { useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from 'react'
+
 import Login from "../Auth/Login";
 import Register from "../Auth/Register";
 import ResetPassword from "../Auth/Reset";
 import Verification from "../Auth/Verification";
-
 import CountryDrop from './CountryDrop';
 import LangDrop from './LangDrop';
 import Menu from './Menu';
@@ -119,7 +119,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="Header__lower__column-2">
-                    <div className="Header__lower__category">
+                    <Link href='/cart' className="Header__lower__category">
                         <svg
                             viewBox="0 0 24 24"
                             width={24}
@@ -129,8 +129,8 @@ const Header = () => {
                             <use xlinkHref="#basket"></use>
                         </svg>
                         <p>Корзина</p>
-                    </div>
-                    <div className="Header__lower__category">
+                    </Link>
+                    <Link href='/comparison' className="Header__lower__category">
                         <svg
                             viewBox="0 0 24 24"
                             width={24}
@@ -140,8 +140,8 @@ const Header = () => {
                             <use xlinkHref="#compare"></use>
                         </svg>
                         <p>Сравнение</p>
-                    </div>
-                    <div className="Header__lower__category">
+                    </Link>
+                    <Link href='/favorites' className="Header__lower__category">
                         <svg
                             viewBox="0 0 24 24"
                             width={24}
@@ -151,7 +151,7 @@ const Header = () => {
                             <use xlinkHref="#favorite"></use>
                         </svg>
                         <p>Избранное</p>
-                    </div>
+                    </Link>
                     <button className="Header__lower__category" onClick={handleLoginOpen}>
                         <svg
                             viewBox="0 0 24 24"

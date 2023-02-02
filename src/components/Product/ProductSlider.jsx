@@ -131,7 +131,7 @@ const ProductSlider = () => {
                 onClick={() => {
                     swiperBtnRef.current?.slideNext()
                 }}
-                className="invisibile absolute right-10 bottom-4 bg-[#0000003b] z-[1] p-[12px_12px_12px_10px] rounded-full cursor-pointer lg:visible"
+                className="invisible absolute right-10 bottom-4 bg-[#0000003b] z-[1] p-[12px_12px_12px_10px] rounded-full cursor-pointer lg:visible"
             >
                 <svg
                     width={24}

@@ -177,6 +177,9 @@ const Sprites = () => (
             <path d="M7 2.91669V11.0834" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             <path d="M2.91675 7H11.0834" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </symbol>
+        <symbol id="dropdown-triangle">
+            <path d="M32.6776 12.5H1.32239L12.0378 3.04519C14.873 0.543568 19.127 0.543568 21.9622 3.04519L32.6776 12.5Z" fill="white" stroke="white" />
+        </symbol>
     </svg>
 )
 

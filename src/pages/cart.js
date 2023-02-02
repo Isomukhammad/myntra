@@ -26,12 +26,12 @@ const Cart = () => {
             /> */}
             <div className="mt-8 flex flex-col gap-4 lg:grid lg:grid-cols-[75%_25%]">
                 <div className="flex flex-col gap-4">
-                    <div className="py-6 px-4 bg-white rounded-sm flex flex-row items-center justify-between w-full">
+                    <div className="py-6 px-4 bg-white rounded-sm flex flex-row items-center justify-between w-full lg:px-6 lg:py-7">
                         <div className="font-medium text-[14spx] min-[360px]:text-base">
                             <InputCheckbox name="Выбрать все" />
                         </div>
                         <div className="font-medium text-textSecondary text-[14px] min-[360px]:text-base">
-                            <button className="hover:text-red-600 transition duration-300">Удалить</button>
+                            <button className="hover:text-red-600 transition duration-300 leading-[19.5px]">Удалить <span className="hidden lg:inline-block">выбранное</span></button>
                         </div>
                     </div>
 
@@ -154,8 +154,8 @@ const Cart = () => {
                 </div>
 
 
-                <div>
-                    <div className="px-4 py-8 bg-white flex flex-col rounded-sm gap-10 lg:px-6">
+                <div className="h-full">
+                    <div className="px-4 py-8 bg-white flex flex-col rounded-sm gap-10 lg:px-6 sticky top-0">
                         <div className="flex flex-row gap-3 items-center">
                             <div>
                                 <svg viewBox="0 0 24 24" className="w-6 h-6 fill-red stroke-white"><use xlinkHref="#info_duotone_line" /></svg>

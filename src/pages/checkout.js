@@ -76,24 +76,24 @@ const Checkout = () => {
                         <h1 className="text-lg font-semibold">Способ оплаты</h1>
                         <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:max-w-[840px] lg:gap-x-10">
                             <div className="flex items-center pl-4 border border-greyFive rounded-sm  cursor-pointer">
-                                <input id="cash" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0  cursor-pointer" />
+                                <input id="cash" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0 focus:ring-transparent cursor-pointer" />
                                 <label for="cash" className="w-full py-4 ml-4 text-sm font-medium  cursor-pointer">Оплата наличными</label>
                             </div>
                             <div className="flex items-center pl-4 border border-greyFive rounded-sm  cursor-pointer">
-                                <input id="click/payment" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0  cursor-pointer" />
+                                <input id="click/payment" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0 focus:ring-transparent cursor-pointer" />
                                 <label for="click/payment" className="w-full py-4 ml-4 text-sm font-medium  cursor-pointer">Оплата через Payme или Click</label>
                             </div>
                             <div className="flex items-center pl-4 border border-greyFive rounded-sm  cursor-pointer">
-                                <input id="humo/uzcart" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0  cursor-pointer" />
+                                <input id="humo/uzcart" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0 focus:ring-transparent cursor-pointer" />
                                 <label for="humo/uzcart" className="w-full py-4 ml-4 text-sm font-medium  cursor-pointer">Оплата картой (Humo и Uzcard)</label>
                             </div>
                             <div className="flex items-center pl-4 border border-greyFive rounded-sm  cursor-pointer">
-                                <input id="card" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0  cursor-pointer" />
+                                <input id="card" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0 focus:ring-transparent cursor-pointer" />
                                 <label for="card" className="w-full py-4 ml-4 text-sm font-medium  cursor-pointer">Оплата картой при получении</label>
                             </div>
                             <div className="flex items-center pl-4 border border-greyFive rounded-sm  cursor-pointer">
-                                <input id="installment" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0  cursor-pointer" />
-                                <label for="installment" className="w-full py-4 ml-4 text-sm font-medium  cursor-pointer">Оформить рассрочку</label>
+                                <input id="installment" type="radio" value="" name="payment" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0 focus:ring-transparent cursor-pointer" />
+                                <label for="installment" className="w-full py-4 ml-4 text-sm font-medium cursor-pointer">Оформить рассрочку</label>
                             </div>
                         </div>
                     </div>
@@ -101,11 +101,11 @@ const Checkout = () => {
                         <h1 className="text-lg font-semibold">Способ получения</h1>
                         <div className="flex flex-col gap-5 lg:max-w-[840px] lg:grid lg:grid-cols-2 lg:gap-x-10">
                             <div className="flex items-center pl-4 border border-greyFive rounded-sm  cursor-pointer">
-                                <input id="bordered-radio-1" type="radio" value="" name="transportation" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0  cursor-pointer" />
+                                <input id="bordered-radio-1" type="radio" value="" name="transportation" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0 focus:ring-transparent cursor-pointer" />
                                 <label for="bordered-radio-1" className="w-full py-4 ml-4 text-sm font-medium  cursor-pointer">Доставка</label>
                             </div>
                             <div className="flex items-center pl-4 border border-greyFive rounded-sm cursor-pointer">
-                                <input id="bordered-radio-2" type="radio" value="" name="transportation" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0  cursor-pointer" />
+                                <input id="bordered-radio-2" type="radio" value="" name="transportation" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0 focus:ring-transparent cursor-pointer" />
                                 <label for="bordered-radio-2" className="w-full py-4 ml-4 text-sm font-medium cursor-pointer peer-checked:border-blue-600">Самовывоз из магазина</label>
                             </div>
                         </div>
@@ -113,14 +113,14 @@ const Checkout = () => {
                             <h1 className="font-medium text-textSecondary px-2">Ваш город</h1>
                             <div className="flex flex-col gap-5 lg:max-w-[840px] lg:grid lg:grid-cols-2 lg:gap-x-10">
                                 <div className="flex items-center pl-4 border border-greyFive rounded-sm  cursor-pointer">
-                                    <input id="city-1" type="radio" value="" name="city" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0  cursor-pointer" />
+                                    <input id="city-1" type="radio" value="" name="city" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0 focus:ring-transparent cursor-pointer" />
                                     <label for="city-1" className="w-full py-4 ml-4 text-sm font-medium  cursor-pointer flex flex-col gap-1">
                                         <p className="text-[15px] font-medium">Ташкент</p>
                                         <p className="text-textSecondary font-medium">Доставкой Myntra.uz</p>
                                     </label>
                                 </div>
                                 <div className="flex items-center pl-4 border border-greyFive rounded-sm  cursor-pointer">
-                                    <input id="city-2" type="radio" value="" name="city" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0  cursor-pointer" />
+                                    <input id="city-2" type="radio" value="" name="city" className="w-[18px] h-[18px] text-purpleMain bg-transparent border-greyFive focus:ring-0 focus:ring-transparent cursor-pointer" />
                                     <label for="city-2" className="w-full py-4 ml-4 text-sm font-medium  cursor-pointer flex flex-col gap-1">
                                         <p className="text-[15px] font-medium">Другой город</p>
                                         <p className="text-textSecondary font-medium">Доставкой службой EXPRESSLOG</p>

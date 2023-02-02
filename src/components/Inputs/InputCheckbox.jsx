@@ -15,7 +15,7 @@ const InputCheckbox = ({ name, handleChange, quantity }) => {
                 }}
                 className="border-none ring-purpleMain focus:ring-0 focus:ring-offset-0"
             />
-            <label htmlFor={name} className="flex flex-row items-center text-sm gap-1">{name}
+            <label htmlFor={name} className="flex flex-row items-center text-sm gap-1 text-[15px]">{name}
                 {
                     quantity ? (
                         <span className='text-textSecondary'>({quantity})</span>

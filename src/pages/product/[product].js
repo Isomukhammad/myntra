@@ -19,9 +19,11 @@ const Product = () => {
                             <div className="text-sm text-placeholder">Код: 5811965165</div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-14 items-center xl:grid xl:grid-cols-[44%_56%] mx-[-24px] w-full">
-                        <ProductSlider />
-                        <div className="Product__сharacteristic flex flex-col gap-10 lg:col-start-2 lg:col-end-3 w-full px-[24px]">
+                    <div className="flex flex-col gap-14 xl:grid xl:grid-cols-[44%_56%] lg:mx-[-24px] w-full">
+                        <div className="mx-[-24px]">
+                            <ProductSlider />
+                        </div>
+                        <div className="Product__сharacteristic flex flex-col gap-10 lg:col-start-2 lg:col-end-3 w-full lg:px-[24px]">
                             <h1 className="text-5 font-semibold">Характеристики</h1>
                             <div className="Product__сharacteristic__category flex flex-col gap-10">
                                 <div className="flex flex-col gap-6">
