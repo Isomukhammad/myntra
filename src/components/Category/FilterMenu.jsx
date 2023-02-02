@@ -12,7 +12,7 @@ const FilterMenu = ({ open, setOpen, setIsScroll }) => {
                         <svg viewBox="0 0 24 24" width={24} height={24} className="st stroke-three"><use xlinkHref="#x"></use></svg>
                     </button>
                 </div>
-                <FilterOption title="Производитель">
+                <FilterOption title="Производитель" open={true}>
                     <div className="relative">
                         <svg viewBox="0 0 24 24" width={24} height={24} fill="none" stroke="#BDBDBD" className="absolute top-3 left-2"><use xlinkHref="#search" /></svg>
                         <input type="text" placeholder="Найти производителя" className="block py-[13.5px] pl-9 w-full text-sm placeholder:text-placeholder placeholder:font-medium bg-transparent rounded-sm border-1 border-gray7 focus:ring-0 focus:border-transparent focus:outline focus:outline-purpleMain" />
@@ -32,7 +32,7 @@ const FilterMenu = ({ open, setOpen, setIsScroll }) => {
                         <InputCheckbox name="Samsung" quantity={54} />
                     </div>
                 </FilterOption>
-                <FilterOption title="Цена">
+                <FilterOption title="Цена" open={true}>
                     <div className="grid grid-cols-2 gap-5">
                         <input
                             type="text"
