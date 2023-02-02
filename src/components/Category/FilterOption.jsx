@@ -1,8 +1,13 @@
+import { useState } from "react";
+
 const { Disclosure, Transition } = require("@headlessui/react");
 
-const FilterOption = ({ title, children, open }) => {
+const FilterOption = ({ title, children, open, full }) => {
     if (open === null) {
         open = true;
+    }
+    if (full === undefined) {
+        full = true;
     }
 
     return (
@@ -10,9 +15,9 @@ const FilterOption = ({ title, children, open }) => {
             {
                 ({ open }) => (
                     <>
-                        <Disclosure.Button className="Filter-option flex w-full justify-between rounded-lg font-semibold">
+                        <Disclosure.Button className={`Filter-option flex ${full ? 'w-full' : 'w-fit'} justify-between rounded-lg font-semibold`}>
                             <span>{title}</span>
-                            <svg viewBox="0 0 24 24" className={`w-6 h-6 fill-none transition-all duration-300 stroke-three ${!open ? `rotate-180 transform'` : ''}`}><use xlinkHref="#arr-up" /></svg>
+                            <svg viewBox="0 0 24 24" className={`w-6 h-6 fill-none transition-all duration-300 stroke-three ${!open ? `rotate-180 transform'` : ''} ${full ? '' : 'ml-4'}`}><use xlinkHref="#arr-up" /></svg>
                         </Disclosure.Button>
                         <Transition
                             enter="transition-all duration-300 ease-in-out"
