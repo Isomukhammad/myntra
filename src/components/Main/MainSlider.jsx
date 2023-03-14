@@ -17,8 +17,9 @@ const pagination = {
     }
 }
 
-const MainSlider = () => {
+const MainSlider = ({ banners }) => {
     const swiperBtnRef = useRef()
+
     return (
         <div className="Main-slider w-100">
             <Swiper
@@ -35,15 +36,13 @@ const MainSlider = () => {
                     swiperBtnRef.current = swiper
                 }}
             >
-                <SwiperSlide>
-                    <Image src="/images/image 1.png" alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
-                </SwiperSlide>
-                <SwiperSlide className="w-full">
-                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 1.png" alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
-                </SwiperSlide>
+                {
+                    banners.data.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <Image src={item.img} alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
+                        </SwiperSlide>
+                    ))
+                }
             </Swiper>
 
             <div

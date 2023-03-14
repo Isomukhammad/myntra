@@ -5,7 +5,8 @@ const MobileMenu = () => {
     const router = useRouter();
     const { pathname } = useRouter();
     return (
-        <div className={`Mobile-menu ${pathname.includes('product') ? 'Mobile-menu--border' : ''}`}>
+        <div className={`Mobile-menu ${pathname.includes('product') ? 'Mobile-menu--border' : ''} flex flex-row items-center justify-around py-[14px] px-5 fixed
+        z-[2] bottom-0 w-full font-semibold text-[12px] text-menuIcons bg-white rounded-[12px_12px_0px_0px] shadow-[4px_0_12px_rgba(0,0,0,0.3)]`}>
             <Link
                 href="/"
                 className={`Mobile-menu__category ${pathname === '/' ? 'active' : ''}`}>

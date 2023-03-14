@@ -34,6 +34,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+      }
 
       img {
         width: 100%;
@@ -87,6 +92,11 @@
         // -ms-flex-align: center;
         // -webkit-align-items: center;
         // align-items: center;
+        cursor: pointer;
+
+        &:active {
+          cursor: grabbing;
+        }
 
         img {
           padding: 0.3em;

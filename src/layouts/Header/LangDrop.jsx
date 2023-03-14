@@ -1,13 +1,17 @@
 import { Menu, Transition } from '@headlessui/react'
+import Link from 'next/link';
+import { useRouter } from 'next/router'
 import { Fragment, useEffect, useRef, useState } from 'react'
 
 const LangDrop = () => {
+    const router = useRouter();
+
     return (
         <div className="text-right hidden lg:flex">
             <Menu as="div" className="relative inline-block text-left">
                 <div>
                     <Menu.Button className="w-full justify-center rounded-md bg-transparent bg-opacity-20 px-4 py-2 text-sm font-medium text-white flex flex-row items-center gap-1 border border-[#E0E0E01F]">
-                        <span className='font-semibold text-sm'>RU</span>
+                        <span className='font-semibold text-sm'>{router.locale === 'ru' ? 'RU' : 'UZ'}</span>
                         <svg
                             viewBox="0 0 16 17"
                             width={16}
@@ -30,8 +34,11 @@ const LangDrop = () => {
                         <div className="py-3 px-2 flex flex-col gap-1">
                             <Menu.Item>
                                 {({ active }) => (
-                                    <button className={`${active ? 'bg-gray-200' : 'text-gray-900'
-                                        } flex flex-row gap-1 py-4 items-center w-full justify-center rounded-cart transition duration-300`}>
+                                    <Link
+                                        href={router.asPath}
+                                        locale={'ru'}
+                                        className={`${active ? 'bg-gray-200' : 'text-gray-900'} flex flex-row gap-1 py-4 items-center w-full justify-center rounded-cart transition duration-300`}
+                                    >
                                         <p className='text-black'>RU</p>
                                         <svg
                                             viewBox="0 0 16 17"
@@ -40,13 +47,16 @@ const LangDrop = () => {
                                         >
                                             <use xlinkHref="#flag-russia"></use>
                                         </svg>
-                                    </button>
+                                    </Link>
                                 )}
                             </Menu.Item>
                             <Menu.Item>
                                 {({ active }) => (
-                                    <button className={`${active ? 'bg-gray-200' : 'text-gray-900'
-                                        } flex flex-row gap-1 py-4 items-center w-full justify-center rounded-cart transition duration-300`}>
+                                    <Link
+                                        href={router.asPath}
+                                        locale={'uz'}
+                                        className={`${active ? 'bg-gray-200' : 'text-gray-900'} flex flex-row gap-1 py-4 items-center w-full justify-center rounded-cart transition duration-300`}
+                                    >
                                         <p className='text-black'>UZ</p>
                                         <svg
                                             viewBox="0 0 24 24"
@@ -55,7 +65,7 @@ const LangDrop = () => {
                                         >
                                             <use xlinkHref="#flag-uzbekistan"></use>
                                         </svg>
-                                    </button>
+                                    </Link>
                                 )}
                             </Menu.Item>
                         </div>

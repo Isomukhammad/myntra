@@ -2,14 +2,12 @@ import { useEffect, useState, Fragment } from "react";
 
 import Brands from "@/components/Category/Brands";
 import PaginateButtons from "@/components/Category/PaginateButtons";
-import EmptyPage from "@/components/EmptyPage";
 import PagePath from "@/components/Page/PagePath";
 import ProductsRaw from "@/components/Product/ProductsRaw";
 import { Menu, Transition } from "@headlessui/react";
 import FilterMenu from "@/components/Category/FilterMenu";
 import SortMenu from "@/components/Category/SortMenu";
-import ProductTab from "@/components/Product/ProductTab";
-import ProductList from "@/components/Product/ProductList";
+import { EmptyPage, ProductTab, ProductList } from '../components/index';
 
 const Favorites = () => {
     const [isRow, setIsRow] = useState(false);

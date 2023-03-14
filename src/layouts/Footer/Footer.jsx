@@ -9,8 +9,8 @@ const Footer = () => {
     const { footer } = data;
 
     return (
-        <div className="Footer__container">
-            <div className="Footer__wrapper 2xl:container 2xl:mx-auto">
+        <div className="Footer__container pt-10 pb-20 bg-headerTop text-white">
+            <div className="Footer__wrapper 2xl:container 2xl:mx-auto flex flex-col px-5 gap-12">
                 <div className="Footer__header">
                     <Image src='/images/footer-logo.png' alt="logo" width={0} height={0} sizes='100vw' placeholder="blurDataURL" className="Footer__logo" />
                     <button>

@@ -1,4 +1,4 @@
-import Sprites from "@/utils/sprites";
+import Sprites from "@/utils/sprites.utils";
 import Footer from "../Footer/Footer";
 
 import Header from "../Header/Header";

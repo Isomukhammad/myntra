@@ -1,5 +1,5 @@
 import FilterOption from "@/components/Category/FilterOption";
-import EmptyPage from "@/components/EmptyPage";
+import EmptyPage from "@/components/EmptyPage/EmptyPage";
 import PagePath from "@/components/Page/PagePath";
 import ProductsRaw from "@/components/Product/ProductsRaw";
 import Image from "next/image";

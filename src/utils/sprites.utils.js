@@ -42,8 +42,8 @@ const Sprites = () => (
         </symbol>
         <symbol id="info_duotone_line">
             <circle cx="12" cy="12" r="9" fill="#9933EF" />
-            <path d="M12 8.25C12.4142 8.25 12.75 7.91421 12.75 7.5C12.75 7.08579 12.4142 6.75 12 6.75C11.5858 6.75 11.25 7.08579 11.25 7.5C11.25 7.91421 11.5858 8.25 12 8.25Z" fill="white" stroke="white" stroke-width="0.5" />
-            <path d="M12 17V10" stroke="white" stroke-width="1.5" />
+            <path d="M12 8.25C12.4142 8.25 12.75 7.91421 12.75 7.5C12.75 7.08579 12.4142 6.75 12 6.75C11.5858 6.75 11.25 7.08579 11.25 7.5C11.25 7.91421 11.5858 8.25 12 8.25Z" fill="white" stroke="white" strokeWidth="0.5" />
+            <path d="M12 17V10" stroke="white" strokeWidth="1.5" />
         </symbol>
         <symbol id="trash">
             <path d="M10 15L10 12" strokeWidth="2" strokeLinecap="round" />

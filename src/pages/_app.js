@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import NProgress from "nprogress";
 
 //styles
-import '@/styles/nprogress.scss'
+import '@/styles/nprogress.scss';
+import "react-loading-skeleton/dist/skeleton.css";
 import '@/styles/_app.scss';
 import '@/styles/_vars.scss';
 import '@/styles/Home.scss';

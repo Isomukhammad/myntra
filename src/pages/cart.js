@@ -1,4 +1,4 @@
-import EmptyPage from "@/components/EmptyPage";
+import EmptyPage from "@/components/EmptyPage/EmptyPage";
 import InputCheckbox from "@/components/Inputs/InputCheckbox";
 import PagePath from "@/components/Page/PagePath";
 import ProductsRaw from "@/components/Product/ProductsRaw";

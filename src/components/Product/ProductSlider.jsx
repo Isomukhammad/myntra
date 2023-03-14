@@ -83,39 +83,12 @@ const ProductSlider = () => {
                 <SwiperSlide>
                     <Image src="/images/image 2.png" alt="" sizes="100vw" width={0} height={0} />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 4.png" alt="" sizes="100vw" width={0} height={0} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 2.png" alt="" sizes="100vw" width={0} height={0} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 4.png" alt="" sizes="100vw" width={0} height={0} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 2.png" alt="" sizes="100vw" width={0} height={0} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 4.png" alt="" sizes="100vw" width={0} height={0} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 2.png" alt="" sizes="100vw" width={0} height={0} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 4.png" alt="" sizes="100vw" width={0} height={0} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 2.png" alt="" sizes="100vw" width={0} height={0} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 4.png" alt="" sizes="100vw" width={0} height={0} />
-                </SwiperSlide>
             </Swiper>
             <div
                 onClick={() => {
                     swiperBtnRef.current?.slidePrev()
                 }}
-                className="invisible absolute bg-[#0000003b] z-[1] bottom-4 left-10 p-[12px_12px_12px_10px] rounded-full cursor-pointer lg:visible"
+                className="invisible absolute bg-[#0000003b] z-[1] bottom-4 left-10 p-[12px_12px_12px_12px] rounded-full cursor-pointer lg:visible active:cursor-grabbing"
             >
                 <svg
                     width={24}
@@ -131,7 +104,7 @@ const ProductSlider = () => {
                 onClick={() => {
                     swiperBtnRef.current?.slideNext()
                 }}
-                className="invisible absolute right-10 bottom-4 bg-[#0000003b] z-[1] p-[12px_12px_12px_10px] rounded-full cursor-pointer lg:visible"
+                className="invisible absolute right-10 bottom-4 bg-[#0000003b] z-[1] p-[12px_12px_12px_12px] rounded-full cursor-pointer lg:visible active:cursor-grabbing"
             >
                 <svg
                     width={24}

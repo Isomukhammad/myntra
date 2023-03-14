@@ -13,7 +13,7 @@ const pagination = {
     }
 }
 
-const SubMainSlider = () => {
+const SubMainSlider = ({ banners }) => {
     return (
         <div className="SubMain-slider w-100">
             <Swiper
@@ -27,15 +27,13 @@ const SubMainSlider = () => {
                 modules={[Pagination, Autoplay]}
                 className="SubMain-slider__swiper"
             >
-                <SwiperSlide>
-                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
-                </SwiperSlide>
-                <SwiperSlide className="w-full">
-                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/image 1-1.png" alt="" width="0" height="0" sizes="100vw" placeholder="blurDataURL" />
-                </SwiperSlide>
+                {
+                    banners.data.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <Image src={item.img} alt={item.name} width="0" height="0" sizes="100vw" />
+                        </SwiperSlide>
+                    ))
+                }
             </Swiper>
 
             <div className="SubMain-slider__pagination"></div>
